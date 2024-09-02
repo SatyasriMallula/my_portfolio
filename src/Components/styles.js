@@ -1,7 +1,7 @@
 import { Box, Button, Stack, styled, TextField } from "@mui/material";
 export const StyledStack = styled(Stack)({
-    height: '45em',
-    width: '100em',
+    height: '45px',
+    width: '100px',
     boxShadow: '0px 0px 5px 0px olive',
     margin: 'auto',
     display: 'flex',
