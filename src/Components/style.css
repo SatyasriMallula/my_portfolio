@@ -1,0 +1,28 @@
+.highlight-dot {
+  position: relative;
+}
+
+.highlight-dot::after {
+  content: "";
+  position: absolute;
+  width: 0.12em; /* Adjust the size to fit the dot */
+  height: 0.12em; /* Adjust the size to fit the dot */
+  background-color: #aea580; /* Change to your desired highlight color */
+  border-radius: 50%;
+  top: 0.22em; /* Adjust the position to overlay the dot */
+  left: 0.055em; /* Adjust the position to overlay the dot */
+}
+.highlight2-dot {
+  position: relative;
+}
+
+.highlight2-dot::after {
+  content: "";
+  position: absolute;
+  width: 0.12em; /* Adjust the size to fit the dot */
+  height: 0.12em; /* Adjust the size to fit the dot */
+  background-color: #aea580; /* Change to your desired highlight color */
+  border-radius: 50%;
+  top: 0.845em; /* Adjust the position to overlay the dot */
+  left: 0.073em; /* Adjust the position to overlay the dot */
+}
