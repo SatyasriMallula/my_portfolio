@@ -1,19 +1,34 @@
 import { Box, Button, Stack, styled, TextField } from "@mui/material";
-export const StyledStack = styled(Stack)({
-    height: '45px',
-    width: '100px',
+export const StyledStack = styled(Stack)(({ theme }) => ({
+    height: '45rem',
+    width: '100rem',
     boxShadow: '0px 0px 5px 0px olive',
     margin: 'auto',
     display: 'flex',
     position: 'relative',
-    overflow: 'hidden'
-})
-export const StyledBox = styled(Box)({
+    overflow: 'hidden',
+    [theme.breakpoints.down('md')]: {
+        width: '80rem',
+        height: '40rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+        width: '60rem',
+        height: '35rem',
+    },
+}));
+
+export const StyledBox = styled(Box)(({ theme }) => ({
     height: '45rem',
     width: '55rem',
-
-})
-
+    [theme.breakpoints.down('md')]: {
+        width: '45rem',
+        height: '40rem',
+    },
+    [theme.breakpoints.down('sm')]: {
+        width: '35rem',
+        height: '30rem',
+    },
+}));
 export const EmptyBox = styled(Box)({
 
     height: '40rem',
